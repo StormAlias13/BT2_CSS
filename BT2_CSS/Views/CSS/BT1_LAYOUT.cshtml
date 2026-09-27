@@ -1,0 +1,106 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Layout - Bài 1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eeeeee;
+        }
+
+        #container {
+            width: 760px;
+            margin: 0px auto;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+        }
+
+        #mainmenu {
+            background-color: #c1495a;
+            padding: 10px 15px;
+        }
+
+            #mainmenu a {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+        #banner {
+            height: 110px;
+            background-color: #5b4e9c;
+        }
+
+            #banner .logo {
+                float: right;
+                margin: 75px 15px 0px 0px;
+                background-color: #2e2560;
+                color: #ffffff;
+                padding: 8px 14px;
+                font-size: 16px;
+            }
+
+        #sidebar {
+            width: 220px;
+            float: left;
+            background-color: #4c7a2e;
+            color: #eafbe0;
+            padding: 20px 15px;
+        }
+
+        #content {
+            margin-left: 250px;
+            background-color: #6a9a3e;
+            color: #eafbe0;
+            padding: 20px 20px;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-weight: normal;
+        }
+
+        #footer {
+            clear: both;
+            background-color: #c98a2e;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="mainmenu">
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div id="banner"><div class="logo">enlightendesigns</div></div>
+        <div id="sidebar">
+            <h3>FEATURED PROJECTS</h3>
+            <p><b>The New Zealand National Party</b><br>We recently launched the New Zealand National Party website.</p>
+            <p><b>Greensets</b><br>We recently launched the Greensets website.</p>
+            <p><b>Nutrition Care</b><br>We recently launched the Nutrition Care website.</p>
+        </div>
+        <div id="content">
+            <h3>ABOUT</h3>
+            <p><b>Enlighten Designs</b> is an Internet solutions provider that specialises in front and back end development. To view some of the web sites we have created view our portfolio.</p>
+            <p>We are currently undergoing a 'face lift', so if you have any questions or would like more information about the services we provide please feel free to contact us.</p>
+            <h3>CONTACT US</h3>
+            <p>Phone: (07) 853 6060<br>Fax: (07) 853 6060<br>Email: info@enlighten.co.nz<br>P.O Box: 14159, Hamilton, New Zealand</p>
+        </div>
+        <div id="footer">Copyright &copy; Enlighten Designs &nbsp; | &nbsp; About - Services - Portfolio - Contact Us - Terms of Trade</div>
+    </div>
+</body>
+</html>

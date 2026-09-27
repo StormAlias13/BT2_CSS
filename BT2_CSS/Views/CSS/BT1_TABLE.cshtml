@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Table - Bài 1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        table.mytable {
+            border-collapse: collapse;
+            width: 480px;
+        }
+
+            table.mytable th {
+                background-color: #000000;
+                color: #ffffff;
+                font-style: italic;
+                font-weight: bold;
+                text-align: left;
+                padding: 4px 8px;
+                border: 1px solid #000;
+            }
+
+            table.mytable td {
+                padding: 4px 8px;
+                border: 1px solid #000;
+                color: #ffffff;
+            }
+
+            table.mytable tr.row_blue {
+                background-color: #0000CC;
+            }
+
+            table.mytable tr.row_teal {
+                background-color: #008080;
+            }
+
+            table.mytable td.first {
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+<h2>Bài 1 - Định dạng bảng (Table)</h2>
+<table class="mytable">
+  <tr>
+    <th>header1</th><th>header2</th><th>header3</th><th>header4</th>
+  </tr>
+  <tr class="row_blue">
+    <td class="first">column1</td><td>colum2</td><td>colum3</td><td>colum4</td>
+  </tr>
+  <tr class="row_teal">
+    <td class="first">column1</td><td>colum2</td><td>colum3</td><td>colum4</td>
+  </tr>
+  <tr class="row_blue">
+    <td class="first">column1</td><td>colum2</td><td>colum3</td><td>colum4</td>
+  </tr>
+  <tr class="row_teal">
+    <td class="first">column1</td><td>colum2</td><td>colum3</td><td>colum4</td>
+  </tr>
+</table>
+</body>
+</html>

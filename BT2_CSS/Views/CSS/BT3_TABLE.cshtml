@@ -1,0 +1,78 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Table - Bài 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        table.mytable {
+            border-collapse: collapse;
+            width: 600px;
+            background-color: #b3001b;
+        }
+
+            table.mytable th {
+                background-color: #8b0000;
+                color: #fff;
+                text-align: left;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            table.mytable td {
+                padding: 8px 10px;
+                color: #fff;
+                font-size: 13px;
+            }
+
+            table.mytable tr.odd td {
+                background-color: #c23347;
+            }
+
+            table.mytable tr.even td {
+                background-color: #a80020;
+            }
+
+            table.mytable td.note {
+                background-color: #a80020;
+                font-size: 12px;
+                line-height: 1.6;
+            }
+    </style>
+</head>
+<body>
+    <h2>Bài 3 - Table công thức (Eggnog Recipe)</h2>
+    <table class="mytable">
+        <tr><th>Ingredients</th><th>serves 12</th><th>serves 24</th></tr>
+        <tr class="odd"><td>milk</td><td>1 quart</td><td>2 quart</td></tr>
+        <tr class="even"><td>cinnamon sticks</td><td>2</td><td>1</td></tr>
+        <tr class="odd"><td>vanilla bean, split</td><td>1</td><td>2</td></tr>
+        <tr class="even"><td>cloves</td><td>5</td><td>10</td></tr>
+        <tr class="odd"><td>mace</td><td>10 blades</td><td>20 blades</td></tr>
+        <tr class="even"><td>egg yolks</td><td>12</td><td>24</td></tr>
+        <tr class="odd"><td>cups sugar</td><td>1 &frac12; cups</td><td>3 cups</td></tr>
+        <tr class="even"><td>dark rum</td><td>1 &frac12; cups</td><td>3 cups</td></tr>
+        <tr class="odd"><td>brandy</td><td>1 &frac12; cups</td><td>3 cups</td></tr>
+        <tr class="even"><td>vanilla</td><td>1 tbsp</td><td>2 tbsp</td></tr>
+        <tr class="odd"><td>half-and-half or light cream</td><td>1 quart</td><td>2 quart</td></tr>
+        <tr class="even"><td colspan="3">Freshly grated nutmeg to taste</td></tr>
+        <tr>
+            <td class="note" colspan="3">
+                1. Combine milk and spices including vanilla bean in a heavy saucepan and let them infuse over lowest possible heat for 5 minutes. Meanwhile, combine yolks and sugar in a large bowl and whisk until mixed.<br>
+                2. Bring milk to a boil and gradually whisk it into the yolk mixture. Return the mixture to the saucepan. Cook over medium heat, stirring steadily with a wooden spoon, for 2 to 3 minutes, or until foam subsides and mixture thickens to consistency of heavy cream. Do not boil, or mixture will curdle.<br>
+                3. Strain mixture into a large bowl and let cool to room temperature. Stir in rum, brandy, half-and-half, vanilla and nutmeg.<br>
+                4. Refrigerate eggnog for at least 2 hours, preferably overnight. Just before serving, dust top of eggnog with additional nutmeg.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

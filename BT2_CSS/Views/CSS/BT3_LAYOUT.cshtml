@@ -1,0 +1,129 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Layout - Bài 3</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222222;
+        }
+
+        #left {
+            width: 180px;
+            float: left;
+            border: 1px solid #333333;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+            #left h3 {
+                margin-top: 0;
+            }
+
+            #left ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px 0px 20px 0px;
+            }
+
+            #left li {
+                margin: 6px 0px;
+            }
+
+            #left a {
+                color: #000000;
+                text-decoration: underline;
+                font-size: 13px;
+            }
+
+        #right {
+            width: 180px;
+            float: right;
+            margin: 10px;
+        }
+
+            #right .box {
+                background-color: #e05a2b;
+                color: #ffffff;
+                border: 1px solid #333333;
+                padding: 15px;
+                text-align: center;
+            }
+
+        #main {
+            margin: 10px 210px 10px 210px;
+            border: 1px solid #333333;
+            padding: 20px 30px;
+        }
+
+            #main h1 {
+                font-size: 26px;
+                margin-top: 0px;
+            }
+
+            #main p {
+                line-height: 1.6;
+                font-size: 14px;
+            }
+
+        #footer {
+            clear: both;
+            background-color: #e0742b;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+            #footer a {
+                color: #000000;
+            }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <h3>Templates</h3>
+        <ul>
+            <li><a href="#">Left Column</a></li>
+            <li><a href="#">Right Column</a></li>
+            <li><a href="#">Top &amp; Right</a></li>
+            <li><a href="#">3 Column</a></li>
+            <li><a href="#">3 Column &amp; Footer</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Threaded</a></li>
+            <li><a href="#">Threaded Item</a></li>
+            <li><a href="#">Unthreaded</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">prosandcons1</a></li>
+            <li><a href="#">prosandcons2</a></li>
+            <li><a href="#">spider1</a></li>
+        </ul>
+    </div>
+
+    <div id="right">
+        <div class="box"><i>There is nothing in this world constant but inconstancy.</i></div>
+    </div>
+
+    <div id="main">
+        <h1>Three Column Layout with Footer</h1>
+        <p>This layout demonstrates a three column layout with a bottom footer stretching the width of the page. The left and right columns are positioned absolutely and the central column (this main body of text) is given very large margins to accommodate the width of the side columns.</p>
+        <p>The footer is positioned along the bottom of the page. Some CSS properties attached to various elements of the page ensure that it is always at the bottom of the view port or the document, whichever is "lower". This is based on an <a href="#">interesting CSS technique</a>.</p>
+        <h2>Dummy text</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>This work is licensed under a <a href="#">Creative Commons License</a>.</p>
+    </div>
+
+    <div id="footer">Designed by <a href="#">Ben Meadowcroft</a></div>
+</body>
+</html>

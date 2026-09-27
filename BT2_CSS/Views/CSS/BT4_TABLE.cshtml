@@ -1,0 +1,95 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Table - Bài 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        .caption {
+            text-align: right;
+            font-size: 11px;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
+        table.mytable {
+            border-collapse: collapse;
+            width: 650px;
+        }
+
+            table.mytable th {
+                background-color: #2f7a78;
+                color: #fff;
+                text-align: left;
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+
+            table.mytable td {
+                padding: 8px 10px;
+                font-size: 12px;
+                border-bottom: 1px solid #cfe3e2;
+            }
+
+                table.mytable td.label {
+                    background-color: #dcecec;
+                    font-weight: bold;
+                    color: #333;
+                    border-left: 4px solid #e08a3c;
+                }
+
+        tr.mytable_row1 td {
+            background-color: #eef7f7;
+        }
+
+        tr.mytable_row2 td {
+            background-color: #f8fcfc;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bài 4 - Table thông số kỹ thuật</h2>
+    <div class="caption">Table 1: Power Mac G5 tech specs</div>
+    <table class="mytable">
+        <tr>
+            <th>CONFIGURATIONS</th>
+            <th>DUAL 1.8GHZ</th>
+            <th>DUAL 2GHZ</th>
+            <th>DUAL 2.5GHZ</th>
+        </tr>
+        <tr class="mytable_row1">
+            <td class="label">MODEL</td>
+            <td>M9454LL/A</td>
+            <td>M9455LL/A</td>
+            <td>M9457LL/A</td>
+        </tr>
+        <tr class="mytable_row2">
+            <td class="label">G5 PROCESSOR</td>
+            <td>Dual 1.8GHz PowerPC G5</td>
+            <td>Dual 2GHz PowerPC G5</td>
+            <td>Dual 2.5GHz PowerPC G5</td>
+        </tr>
+        <tr class="mytable_row1">
+            <td class="label">FRONTSIDE BUS</td>
+            <td>900MHz per processor</td>
+            <td>1GHz per processor</td>
+            <td>1.25GHz per processor</td>
+        </tr>
+        <tr class="mytable_row2">
+            <td class="label">LEVEL2 CACHE</td>
+            <td>512K per processor</td>
+            <td>512K per processor</td>
+            <td>512K per processor</td>
+        </tr>
+    </table>
+</body>
+</html>

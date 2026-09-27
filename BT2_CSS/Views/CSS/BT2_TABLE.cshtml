@@ -1,0 +1,129 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Table - Bài 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        table.mytable {
+            border-collapse: collapse;
+            width: 720px;
+        }
+
+            table.mytable th {
+                background-color: #eeeeee;
+                text-align: left;
+                padding: 8px;
+                border-bottom: 1px solid #ccc;
+                color: #333;
+            }
+
+                table.mytable th.center, table.mytable td.center {
+                    text-align: center;
+                }
+
+            table.mytable td {
+                padding: 10px 8px;
+                border-bottom: 1px solid #e5e5e5;
+                vertical-align: top;
+            }
+
+        .icon {
+            color: #e0a000;
+            font-size: 16px;
+        }
+
+            .icon.q {
+                color: #5b9bd5;
+            }
+
+        .title {
+            color: #2266aa;
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+        }
+
+        .desc {
+            color: #666;
+            font-size: 12px;
+        }
+
+            .desc a {
+                color: #5b9bd5;
+            }
+
+        .num {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .date {
+            color: #2266aa;
+            font-size: 12px;
+        }
+
+        .by {
+            color: #999;
+            font-size: 11px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bài 2 - Table danh sách chủ đề diễn đàn</h2>
+    <table class="mytable">
+        <tr>
+            <th style="width:55%">Topic</th>
+            <th class="center" style="width:10%">Posts</th>
+            <th class="center" style="width:10%">Views</th>
+            <th style="width:25%">Last Post</th>
+        </tr>
+        <tr>
+            <td>
+                <span class="icon">&#128274;</span> <span class="title">Posting Guidelines</span>
+                <span class="desc">Posted in <a href="#">Please Read First!</a> by Joe Gillespie</span>
+            </td>
+            <td class="center num">1</td>
+            <td class="center num">288</td>
+            <td><span class="date">Dec 21, 2003</span><span class="by">by Joe Gillespie</span></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="icon">&#128274;</span> <span class="title">Forum Rules</span>
+                <span class="desc">Posted in <a href="#">Please Read First!</a> by Joe Gillespie</span>
+            </td>
+            <td class="center num">1</td>
+            <td class="center num">2023</td>
+            <td><span class="date">Dec 21, 2003</span><span class="by">by Joe Gillespie</span></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="icon q">&#128172;</span> <span class="title">A suitable Word Template</span>
+                <span class="desc">Posted in <a href="#">Web Design Software</a> by Wilson Lagg</span>
+            </td>
+            <td class="center num">2</td>
+            <td class="center num">199</td>
+            <td><span class="date">Mar 28, 2008</span><span class="by">by Shahzad Asif</span></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="icon q">&#128172;</span> <span class="title">few HTML and CSS issues</span>
+                <span class="desc">Posted in <a href="#">Layout</a> by Jade M</span>
+            </td>
+            <td class="center num">3</td>
+            <td class="center num">1</td>
+            <td><span class="date">Mar 28, 2008</span><span class="by">by Shahzad Asif</span></td>
+        </tr>
+    </table>
+</body>
+</html>

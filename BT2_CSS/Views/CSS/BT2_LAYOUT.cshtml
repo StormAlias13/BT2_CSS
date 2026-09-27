@@ -1,0 +1,126 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <title>Layout - Bài 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+            background-color: #eeeeee;
+        }
+
+        #container {
+            width: 760px;
+            margin: 0px auto;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+        }
+
+        #mainmenu {
+            border-bottom: 2px solid #eeeeee;
+            padding: 0px 10px;
+        }
+
+            #mainmenu a {
+                text-decoration: none;
+                color: #333333;
+                padding: 14px 16px;
+                font-size: 12px;
+                display: inline-block;
+            }
+
+                #mainmenu a.active {
+                    background-color: #e08a2e;
+                    color: #ffffff;
+                }
+
+        #banner {
+            height: 110px;
+            background-color: #c98a4a;
+        }
+
+            #banner .logo {
+                float: right;
+                margin: 75px 15px 0px 0px;
+                background-color: #000000;
+                color: #ffffff;
+                padding: 8px 14px;
+                font-size: 16px;
+            }
+
+        #content {
+            width: 440px;
+            float: left;
+            padding: 20px;
+        }
+
+        #sidebar {
+            margin-left: 480px;
+            padding: 20px;
+        }
+
+        h3 {
+            color: #c9702e;
+            font-weight: normal;
+            margin-top: 0;
+        }
+
+        #sidebar h3 {
+            color: #8a8a2e;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #c9702e;
+        }
+
+        #footer {
+            clear: both;
+            border-top: 1px solid #eeeeee;
+            color: #999999;
+            font-size: 11px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="mainmenu">
+            <a class="active" href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div id="banner"><div class="logo">enlightendesigns</div></div>
+        <div id="content">
+            <h3>ABOUT</h3>
+            <p><b>Enlighten Designs</b> is an Internet solutions provider that specialises in front and back end development. To view some of the web sites we have created view our portfolio.</p>
+            <p>We are currently undergoing a 'face lift', so if you have any questions or would like more information about the services we provide please feel free to contact us.</p>
+            <h3>CONTACT US</h3>
+            <p>Phone: (07) 853 6060<br>Fax: (07) 853 6060<br>Email: <a href="#">info@enlighten.co.nz</a><br>P.O Box: 14159, Hamilton, New Zealand</p>
+            <p><a href="#">More contact information...</a></p>
+        </div>
+        <div id="sidebar">
+            <h3>FEATURED PROJECTS</h3>
+            <p><b>The New Zealand National Party</b><br>We recently launched the <a href="#">New Zealand National Party</a> website.</p>
+            <p><b>Greensets</b><br>We recently launched the <a href="#">Greensets</a> website.</p>
+            <p><b>Nutrition Care</b><br>We recently launched the <a href="#">Nutrition Care</a> website.</p>
+        </div>
+        <div id="footer">
+            Copyright &copy; Enlighten Designs &mdash; Powered by Enlighten Hosting and Vadmin 3.0 CMS &nbsp;|&nbsp;
+            About - Services - Portfolio - Contact Us - Terms of Trade
+        </div>
+    </div>
+</body>
+</html>
